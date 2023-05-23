@@ -87,11 +87,11 @@ function Reservations() {
     <ChakraProvider>
         <main>
             <Mainblock/>
-
+            
             {availableTime ? (
             <BookingForm availableTime={availableTime} onSelectTime={handleSelectTime} onDateChange={handleDateChange}/>
             ) : (
-            <p>Cargando tiempos disponibles...</p>
+            <p>Loading available times...</p>
             )}            
 
             <Footer/>

@@ -70,8 +70,8 @@ export default function Header() {
                   justifyContent="space-between">
                     <Text color="#333333" fontFamily="Markazi Text" fontSize="20pt" fontWeight="bold">
                       {Links.map((link) => (
-                        <Link px={2} py={1} rounded={'md'} href={link}
-                        _hover={{textDecoration: 'none', bg: 'gray.200',}}>{link}
+                        <Link px={2} py={1} rounded={'md'} href={link} aria-describedby={link}
+                        _hover={{textDecoration: 'none', bg: 'gray.200',}} >{link}
                         </Link>
                       ))}
                     </Text>
